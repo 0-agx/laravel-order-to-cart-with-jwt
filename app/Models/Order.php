@@ -20,12 +20,12 @@ class Order extends Model
         'shipping_address',
         'expedition',
         'order_amount',
-        'shipping_price',
+        'shipping_cost',
         'net_amount',
         'status',
     ];
 
-    public function detail_order()
+    public function details()
     {
         return $this->hasMany(DetailOrder::class);
     }

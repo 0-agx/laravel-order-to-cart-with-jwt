@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('shipping_address');
             $table->string('expedition');
             $table->integer('order_amount');
-            $table->integer('shipping_price');
+            $table->integer('shipping_cost');
             $table->integer('net_amount');
             $table->string('status');
             $table->timestamps();

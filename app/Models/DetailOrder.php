@@ -23,11 +23,6 @@ class DetailOrder extends Model
         'amount',
     ];
 
-    public function order()
-    {
-        return $this->belongsTo(Order::class);
-    }
-
     public function detail_cart()
     {
         return $this->belongsTo(DetailCart::class);

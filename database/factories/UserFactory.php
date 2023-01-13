@@ -20,7 +20,7 @@ class UserFactory extends Factory
         return [
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
-            'address' => 'Menganti Palem Pertiwi Gresik Jatim',
+            'address' => 'Jakarta',
             'email_verified_at' => now(),
             'user_group_id' => rand(1, 2),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password

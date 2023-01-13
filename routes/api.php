@@ -6,6 +6,7 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\CartController;
 use App\Http\Controllers\Api\ItemController;
 use App\Http\Controllers\Api\UserController;
+use App\Http\Controllers\Api\OrderController;
 use App\Http\Controllers\Api\CheckoutController;
 use App\Http\Controllers\Api\ExpeditionController;
 
@@ -59,6 +60,8 @@ Route::group(['middleware' => ['jwt.verify']], function() {
         'prefix' => 'order'
     ], function ($router) {
         Route::post('/checkout', CheckoutController::class);
+        Route::get('/all', [OrderController::class, 'all']);
+        Route::post('/byId', [OrderController::class, 'by_id']);
     });
 
     Route::group([

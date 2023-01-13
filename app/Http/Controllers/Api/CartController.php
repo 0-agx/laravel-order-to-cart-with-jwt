@@ -78,7 +78,7 @@ class CartController extends Controller
 
     public function show()
     {
-        $cart = Cart::with('detail_cart')->where([
+        $cart = Cart::with('details')->where([
             'user_id' => auth()->guard('api')->id(),
             'status' => 0
         ])->first();
