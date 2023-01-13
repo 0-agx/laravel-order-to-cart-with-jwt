@@ -7,7 +7,7 @@ REST API dengan fitur add product to cart hingga place order
 Clone repository
 
 ```bash
-  git clone https://github.com/0-agx/laravel-order-to-cart-with-jwt.git
+git clone https://github.com/0-agx/laravel-order-to-cart-with-jwt.git
 ```
 
 Masuk ke directory project
